@@ -1,0 +1,24 @@
+{
+  "name": "formready",
+  "version": "0.1.0",
+  "description": "Free in-browser tools: compress PDF/images to exact KB, Word to PDF, PDF to Word",
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "dev": "node scripts/generate.mjs && vite",
+    "build": "node scripts/generate.mjs && vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "devDependencies": {
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "docx": "^9.15.4",
+    "html-to-pdfmake": "^2.6.0",
+    "mammoth": "^1.13.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
+    "pdfmake": "^0.3.14"
+  },
+  "private": true,
+  "type": "module"
+}
